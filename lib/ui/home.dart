@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
             children: [
               Header(),
               Search(),
-              SizedBox(height: 120.0),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.19),
               Footer(),
             ],
           ),
