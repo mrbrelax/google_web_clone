@@ -8,19 +8,18 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.white,
-        body: Padding(
-          padding: EdgeInsets.only(left: 5, right: 5),
-          child: Column(
-            children: [
-              Header(),
-              Search(),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.19),
-              Footer(),
-            ],
-          ),
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Padding(
+        padding: EdgeInsets.only(left: 5, right: 5),
+        child: Column(
+          children: [
+            SizedBox(),
+            Header(),
+            Search(),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.10),
+            Footer(),
+          ],
         ),
       ),
     );
